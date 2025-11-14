@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- 
+<!--
 C syntax highlighting
 Written by Ezra Altahan
 Created 06/02/2015 | Updated 16/10/2016
@@ -13,44 +13,44 @@ https://github.com/ei
 <SyntaxDefinition name="C" extensions=".c">
 
     <Environment/>
-        
+
     <Properties>
         <Property name="LineComment" value="//"/>
         <Property name="BlockCommentBegin" value="/*"/>
         <Property name="BlockCommentEnd" value="*/"/>
     </Properties>
-        
+
     <Digits name="Digits" color="#BF382A"/>
 
     <RuleSets>
         <RuleSet ignorecase="false">
-                        
+
             <Delimiters>()[]{},:.`=;+-*/%~ &amp;|^&gt;&lt;</Delimiters>
-            
+
             <Span name="LineComment" stopateol="true" color="Green" bold="false" italic="false">
                 <Begin>//</Begin>
             </Span>
-            
+
             <Span name="BlockComment1" rule="Doxygen" stopateol="false" color="Teal" bold="false" italic="false">
                 <Begin>/**</Begin>
                 <End>*/</End>
             </Span>
-                        
+
             <Span name="BlockComment2" stopateol="false" color="Green" bold="false" italic="false">
                 <Begin>/*</Begin>
                 <End>*/</End>
             </Span>
-                        
-            <Span name="String" stopateol="true" color="#808080" bold="false" italic="false" escapecharacter="\">
+
+            <Span name="String" stopateol="true" color="Sienna" bold="false" italic="false" escapecharacter="\">
                 <Begin>"</Begin>
                 <End>"</End>
             </Span>
-            
-            <Span name="Char" stopateol="true" color="#808080" bold="false" italic="false" escapecharacter="\">
+
+            <Span name="Char" stopateol="true" color="Sienna" bold="false" italic="false" escapecharacter="\">
                 <Begin>'</Begin>
                 <End>'</End>
             </Span>
-            
+
             <Span name="Preprocessor" stopateol="true" color="Sienna" bold="false" italic="false">
                 <Begin>#include</Begin>
             </Span>
@@ -73,7 +73,7 @@ https://github.com/ei
                 <Key word="typedef"/>
                 <Key word="while"/>
             </KeyWords>
-                        
+
             <KeyWords name="Keywords2" color="DarkViolet" bold="false" italic="false">
                 <Key word="DIR"/>
                 <Key word="FILE"/>
@@ -165,7 +165,7 @@ https://github.com/ei
                 <Key word="wctype_t"/>
                 <Key word="wint_t"/>
             </KeyWords>
-            
+
             <KeyWords name="Keywords3" color="Red" bold="false" italic="false">
                 <Key word="FALSE"/>
                 <Key word="NULL"/>
@@ -173,7 +173,7 @@ https://github.com/ei
                 <Key word="false"/>
                 <Key word="true"/>
             </KeyWords>
-            
+
             <KeyWords name="Keywords4" color="Sienna" bold="false" italic="false">
                 <Key word="#define"/>
                 <Key word="#elif"/>
@@ -186,10 +186,10 @@ https://github.com/ei
                 <Key word="#undef"/>
             </KeyWords>
         </RuleSet>
-        
+
         <RuleSet name="Doxygen" ignorecase="false">
             <Delimiters>~!%^*()+=|\#/{}[];"'&lt;&gt; , .?</Delimiters>
-            
+
             <KeyWords name="Keywords1" color="DimGray" bold="false" italic="false">
                 <Key word="@author"/>
                 <Key word="@b"/>
